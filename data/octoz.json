@@ -1,0 +1,1412 @@
+[
+  {
+    "address": "1 bis rue Jacques Kablé",
+    "zip_code": "75018",
+    "state": "PARIS"
+  },
+  {
+    "address": "1 bis rue Pasteur",
+    "zip_code": "91260",
+    "state": "Juvisy sur Orge"
+  },
+  {
+    "address": "1 place de la Tournelle",
+    "zip_code": "92250",
+    "state": "La Garenne Colombes"
+  },
+  {
+    "address": "1 rue Albert Dhalenne",
+    "zip_code": "93400",
+    "state": "Saint-Ouen"
+  },
+  {
+    "address": "1 rue Aumont Thieville",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "1 rue de Bicêtre",
+    "zip_code": "94240",
+    "state": "La Hay Les Roses"
+  },
+  {
+    "address": "1 rue de la Noue",
+    "zip_code": "93170",
+    "state": "Bagnolet"
+  },
+  {
+    "address": "1 rue des Cottages",
+    "zip_code": "92150",
+    "state": "Suresnes"
+  },
+  {
+    "address": "1 rue des Palétuviers",
+    "zip_code": "95520",
+    "state": "Osny"
+  },
+  {
+    "address": "1 rue Germaine Tailleferre",
+    "zip_code": "75019",
+    "state": "Paris"
+  },
+  {
+    "address": "1 rue Jean Leclaire",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "1 rue Maître Jacques",
+    "zip_code": "92100",
+    "state": "Boulogne Billancourt"
+  },
+  {
+    "address": "1 rue Palestine",
+    "zip_code": "75019",
+    "state": "PARIS"
+  },
+  {
+    "address": "1 rue Saint-Lambert",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "1 rue Tlemcen",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "10 avenue de la République",
+    "zip_code": "94700",
+    "state": "Maisons-Alfort"
+  },
+  {
+    "address": "10 rue Beaugrenelle",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "10 rue Germain Dardan",
+    "zip_code": "92120",
+    "state": "MONTROUGE"
+  },
+  {
+    "address": "10 rue Henri Poincaré",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "10 rue Philippe de Champagne",
+    "zip_code": "75013",
+    "state": "Paris"
+  },
+  {
+    "address": "10 rue Tintoret",
+    "zip_code": "92600",
+    "state": "Asnières-sur-Seine"
+  },
+  {
+    "address": "104 cours de Vincennes",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "104 rue de Sèvres",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "11 Avenue de Taillebourg",
+    "zip_code": "75011",
+    "state": "PARIS"
+  },
+  {
+    "address": "11 avenue Roger Chambonnet",
+    "zip_code": "91220",
+    "state": "BRETIGNY SUR ORGE"
+  },
+  {
+    "address": "11 bis rue du Général Leclerc",
+    "zip_code": "91440",
+    "state": "Bures sur Yvette"
+  },
+  {
+    "address": "11 rue des Champs",
+    "zip_code": "92600",
+    "state": "Asnières sur Seine"
+  },
+  {
+    "address": "11 rue des Gatines",
+    "zip_code": "75020",
+    "state": "PARIS"
+  },
+  {
+    "address": "11 rue du Havre",
+    "zip_code": "75008",
+    "state": "Paris"
+  },
+  {
+    "address": "11 rue Esquirol",
+    "zip_code": "75013",
+    "state": "Paris"
+  },
+  {
+    "address": "11 rue Fauvet",
+    "zip_code": "75018",
+    "state": "PARIS"
+  },
+  {
+    "address": "11 rue Pierre d'Artagnan",
+    "zip_code": "92350",
+    "state": "Le Plessis Robinson"
+  },
+  {
+    "address": "110 rue du Faubourg du Temple",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "111 avenue de la République",
+    "zip_code": "92120",
+    "state": "Montrouge"
+  },
+  {
+    "address": "113 Avenue de la République",
+    "zip_code": "94300",
+    "state": "Vincennes"
+  },
+  {
+    "address": "115 rue de la Pompe",
+    "zip_code": "75116",
+    "state": "Paris"
+  },
+  {
+    "address": "12 Boulevard Raymond Poincaré",
+    "zip_code": "92380",
+    "state": "Garches"
+  },
+  {
+    "address": "12 rue Chaigneau",
+    "zip_code": "94210",
+    "state": "LA VARENNE-SAINTE-HILAIRE"
+  },
+  {
+    "address": "12 rue de Buci",
+    "zip_code": "75006",
+    "state": "PARIS"
+  },
+  {
+    "address": "12 rue des Quatre Cheminées",
+    "zip_code": "92100",
+    "state": "Boulogne Billancourt"
+  },
+  {
+    "address": "12 rue Montauban",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "12 rue Pasteur",
+    "zip_code": "95100",
+    "state": "ARGENTEUIL"
+  },
+  {
+    "address": "122 avenue du Maréchal Foch",
+    "zip_code": "78700",
+    "state": "Conflans Ste Honorine"
+  },
+  {
+    "address": "123 rue de la Reine Blanche",
+    "zip_code": "78955",
+    "state": "Carrières sous Poissy"
+  },
+  {
+    "address": "126 route de la Reine",
+    "zip_code": "92100",
+    "state": "Boulogne Billancourt"
+  },
+  {
+    "address": "127 avenue Félix Faure",
+    "zip_code": "92000",
+    "state": "Nanterre"
+  },
+  {
+    "address": "13 avenue Sisley",
+    "zip_code": "92150",
+    "state": "SURESNES"
+  },
+  {
+    "address": "13 boulevard de la Chapelle",
+    "zip_code": "75010",
+    "state": "Paris"
+  },
+  {
+    "address": "13 rue de la Mare Huguet",
+    "zip_code": "93110",
+    "state": "Rosny sous Bois"
+  },
+  {
+    "address": "13 rue du Général Leclerc",
+    "zip_code": "94550",
+    "state": "CHEVILLY LARUE"
+  },
+  {
+    "address": "13 rue du Réveil Matin",
+    "zip_code": "78800",
+    "state": "HOUILLES"
+  },
+  {
+    "address": "13 rue Saint Nicolas",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "14 avenue du Bel AIr",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "14 passage Geffroy-Didelot",
+    "zip_code": "75017",
+    "state": "PARIS"
+  },
+  {
+    "address": "14 rue d'Alésia",
+    "zip_code": "93190",
+    "state": "Livry Gargan"
+  },
+  {
+    "address": "14 rue de Bretagne",
+    "zip_code": "78490",
+    "state": "Montfort l'Amaury"
+  },
+  {
+    "address": "14 rue des Champs Guillaume",
+    "zip_code": "95240",
+    "state": "Cormeilles en Parisis"
+  },
+  {
+    "address": "14 rue des Taillandiers",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "14 rue du Maréchal Gallieni",
+    "zip_code": "78000",
+    "state": "Versailles"
+  },
+  {
+    "address": "14 rue Paul Déroulède",
+    "zip_code": "92270",
+    "state": "Bois Colombes"
+  },
+  {
+    "address": "140 rue du Faubourg St Martin",
+    "zip_code": "75010",
+    "state": "PARIS"
+  },
+  {
+    "address": "146 boulevard Diderot",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "15 rue des Sablières",
+    "zip_code": "92000",
+    "state": "Nanterre"
+  },
+  {
+    "address": "15 rue Georges Pitard",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "152 avenue Daumesnil",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "155",
+    "zip_code": " Avenue du Maréchal Leclerc",
+    "state": "93330"
+  },
+  {
+    "address": "156 rue des Pyrénées",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "159 rue du Faubourg St Antoine",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "16 allée de Fontainebleau",
+    "zip_code": "75019",
+    "state": "Paris"
+  },
+  {
+    "address": "16 bd de la Liberté",
+    "zip_code": "92320",
+    "state": "Chatillon"
+  },
+  {
+    "address": "16 rue des Orteaux",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "16 rue Nansouty",
+    "zip_code": "75014",
+    "state": "Paris"
+  },
+  {
+    "address": "16 rue Pasteur",
+    "zip_code": "94270",
+    "state": "Le Kremlin Bicêtre"
+  },
+  {
+    "address": "16 square Géricault",
+    "zip_code": "78150",
+    "state": "Le Chesnay"
+  },
+  {
+    "address": "160 bis rue des Pyrénées",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "160 promenade du Verger",
+    "zip_code": "92130",
+    "state": "ISSY LES MOULINEAUX"
+  },
+  {
+    "address": "163 avenue de Suffren",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "164 rue de Paris",
+    "zip_code": "92100",
+    "state": "Boulogne-Billancourt"
+  },
+  {
+    "address": "166 avenue de Verdun",
+    "zip_code": "92130",
+    "state": "Issy les Moulineaux"
+  },
+  {
+    "address": "17 rue Daru",
+    "zip_code": "75008",
+    "state": "PARIS"
+  },
+  {
+    "address": "17 rue des Ruelles",
+    "zip_code": "95430",
+    "state": "Auvers sur Oise"
+  },
+  {
+    "address": "17 rue Fizeau",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "17 rue Henri Ribière",
+    "zip_code": "75019",
+    "state": "PARIS"
+  },
+  {
+    "address": "17 rue Louis Breguet",
+    "zip_code": "78280",
+    "state": "Guyancourt"
+  },
+  {
+    "address": "171 rue Saint Maur",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "171 rue Saint Maur",
+    "zip_code": "75011",
+    "state": "PARIS"
+  },
+  {
+    "address": "18 rue des Clos Saint-Marcel",
+    "zip_code": "92330",
+    "state": "Sceaux"
+  },
+  {
+    "address": "18 rue Jean Dussourd",
+    "zip_code": "92600",
+    "state": "Asnières"
+  },
+  {
+    "address": "18 rue Sidi Carnot",
+    "zip_code": "92120",
+    "state": "Montrouge"
+  },
+  {
+    "address": "183 bis av du Général Leclerc",
+    "zip_code": "78220",
+    "state": "Viroflay"
+  },
+  {
+    "address": "1830 rue Paulin Labarre",
+    "zip_code": "45160",
+    "state": "Olivet"
+  },
+  {
+    "address": "188 rue de la Jarry",
+    "zip_code": "94300",
+    "state": "Vincennes"
+  },
+  {
+    "address": "189 rue du Temple",
+    "zip_code": "75003",
+    "state": "PARIS"
+  },
+  {
+    "address": "19 avenue Jean Moulin",
+    "zip_code": "93100",
+    "state": "Montreuil"
+  },
+  {
+    "address": "19 b rue des Renards",
+    "zip_code": "44300",
+    "state": "Nantes"
+  },
+  {
+    "address": "19 rue Pasteur",
+    "zip_code": "92160",
+    "state": "Antony"
+  },
+  {
+    "address": "190 rue de Fontenay",
+    "zip_code": "94300",
+    "state": "Vincennes"
+  },
+  {
+    "address": "192 bis rue de Vaugirard",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "2 allée Cardinal Lavigerie",
+    "zip_code": "93260",
+    "state": "Les Lilas"
+  },
+  {
+    "address": "2 allée du Four",
+    "zip_code": "94370",
+    "state": "Sucy en Brie"
+  },
+  {
+    "address": "2 rue Ampère",
+    "zip_code": "92800",
+    "state": "PUTEAUX"
+  },
+  {
+    "address": "2 rue du Bel Air",
+    "zip_code": "92190",
+    "state": "Meudon"
+  },
+  {
+    "address": "2 rue du Massif Central",
+    "zip_code": "94800",
+    "state": "VILLEJUIF"
+  },
+  {
+    "address": "2 rue Jean Macé",
+    "zip_code": "78360",
+    "state": "Montesson"
+  },
+  {
+    "address": "2 rue Saint-Lambert",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "2 rue Tolain",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "20 bis rue Sibuet",
+    "zip_code": "75012",
+    "state": "PARIS"
+  },
+  {
+    "address": "20 impasse Denis Dulac",
+    "zip_code": "94700",
+    "state": "Maison Alfort"
+  },
+  {
+    "address": "20 rue du Mont Cenis",
+    "zip_code": "75018",
+    "state": "Paris"
+  },
+  {
+    "address": "20 rue Vautier",
+    "zip_code": "94340",
+    "state": "Joinville le Pont"
+  },
+  {
+    "address": "21 avenue de la République",
+    "zip_code": "92400",
+    "state": "Courbevoie"
+  },
+  {
+    "address": "21 Impasse Truillot",
+    "zip_code": "75011",
+    "state": "PARIS"
+  },
+  {
+    "address": "21 rue Anatole France",
+    "zip_code": "94270",
+    "state": "Le Kremlin Bicêtre"
+  },
+  {
+    "address": "21 rue de l'Eglise",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "212 avenue du Maine",
+    "zip_code": "75014",
+    "state": "PARIS"
+  },
+  {
+    "address": "22 rue de Chazelles",
+    "zip_code": "75017",
+    "state": "PARIS"
+  },
+  {
+    "address": "22 rue de Dinan",
+    "zip_code": "35520",
+    "state": "La Mézière"
+  },
+  {
+    "address": "22 rue de Lyon",
+    "zip_code": "75012",
+    "state": "PARIS"
+  },
+  {
+    "address": "22 rue du Ranelagh",
+    "zip_code": "75016",
+    "state": "PARIS"
+  },
+  {
+    "address": "22 rue Ernest Renan",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "224 rue de Tolbiac",
+    "zip_code": "75013",
+    "state": "PARIS"
+  },
+  {
+    "address": "23 rue Armengaud",
+    "zip_code": "92210",
+    "state": "Saint Cloud"
+  },
+  {
+    "address": "23 rue Louis Pouey",
+    "zip_code": "92800",
+    "state": "Puteaux"
+  },
+  {
+    "address": "235 bd Pereire",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "24 blvd des Filles du Calvaire",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "24 boulevard de Reuilly",
+    "zip_code": "75012",
+    "state": "PARIS"
+  },
+  {
+    "address": "24 route des Palombières",
+    "zip_code": "33750",
+    "state": "Baron"
+  },
+  {
+    "address": "24 rue Eugène et Marie-Louise",
+    "zip_code": "93500",
+    "state": "Pantin"
+  },
+  {
+    "address": "25 avenue du Grand Veneur",
+    "zip_code": "78110",
+    "state": "LE VESINET"
+  },
+  {
+    "address": "25 quai André Citroën",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "25 rue Auger",
+    "zip_code": "93500",
+    "state": "PANTIN"
+  },
+  {
+    "address": "25 rue Babeuf",
+    "zip_code": "94270",
+    "state": "Le Kremlin Bicêtre"
+  },
+  {
+    "address": "25 rue Buffon",
+    "zip_code": "75005",
+    "state": "PARIS"
+  },
+  {
+    "address": "25 rue Marius Aufan",
+    "zip_code": "92300",
+    "state": "Levallois Perret"
+  },
+  {
+    "address": "250 chaussée Jules César",
+    "zip_code": "95600",
+    "state": "EAUBONNE"
+  },
+  {
+    "address": "254 rue d'Estienne d'Orves",
+    "zip_code": "92700",
+    "state": "Colombes"
+  },
+  {
+    "address": "26 rue du Cdt René Mouchotte",
+    "zip_code": "75014",
+    "state": "PARIS"
+  },
+  {
+    "address": "26 rue Léon Jost",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "27 rue des Pavillons",
+    "zip_code": "92800",
+    "state": "Puteaux"
+  },
+  {
+    "address": "28 avenue de l'Europe",
+    "zip_code": "92300",
+    "state": "Levallois-Perret"
+  },
+  {
+    "address": "28 rue Troyon",
+    "zip_code": "92310",
+    "state": "Sèvres"
+  },
+  {
+    "address": "29 bd Galliena",
+    "zip_code": "92130",
+    "state": "ISSY LES MOULINEAUX"
+  },
+  {
+    "address": "29 rue Danton",
+    "zip_code": "92300",
+    "state": "Levallois Perret"
+  },
+  {
+    "address": "29 rue Danton",
+    "zip_code": "92300",
+    "state": "LEVALLOIS PERRET"
+  },
+  {
+    "address": "3 route du Kleebach",
+    "zip_code": "68140",
+    "state": "Munster"
+  },
+  {
+    "address": "3 rue du Coteau",
+    "zip_code": "92370",
+    "state": "CHAVILLE"
+  },
+  {
+    "address": "3 rue Paul Napoléon Roinard",
+    "zip_code": "92400",
+    "state": "Courbevoie"
+  },
+  {
+    "address": "3",
+    "zip_code": " Rue Donatello",
+    "state": "92400"
+  },
+  {
+    "address": "30 rue de Belfort",
+    "zip_code": "92400",
+    "state": "Courbevoie"
+  },
+  {
+    "address": "30 rue de Zilina",
+    "zip_code": "92000",
+    "state": "Nanterre"
+  },
+  {
+    "address": "30 rue du Sergent Bauchat",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "30-36 rue Sergent Bauchat",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "31 route de la Chapelle",
+    "zip_code": "27180",
+    "state": "CAUGE"
+  },
+  {
+    "address": "31 rue de la résistance",
+    "zip_code": "78150",
+    "state": "LE CHESNAY"
+  },
+  {
+    "address": "31 rue du Transvaal",
+    "zip_code": "75020",
+    "state": "PARIS"
+  },
+  {
+    "address": "32 allée du lac supérieur",
+    "zip_code": "78110",
+    "state": "Le Vesinet"
+  },
+  {
+    "address": "32 avenue de l'Yser",
+    "zip_code": "78800",
+    "state": "Houilles"
+  },
+  {
+    "address": "32 avenue Eugène Thomas",
+    "zip_code": "94270",
+    "state": "Le Kremlin Bicetre"
+  },
+  {
+    "address": "32 rue Dareau",
+    "zip_code": "75014",
+    "state": "Paris"
+  },
+  {
+    "address": "33 rue Guilleminot",
+    "zip_code": "75014",
+    "state": "PARIS"
+  },
+  {
+    "address": "33 rue Viala",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "34 avenue de la Métallurgie",
+    "zip_code": "93210",
+    "state": "Saint Denis"
+  },
+  {
+    "address": "346 avenue Georges Clémenceau",
+    "zip_code": "92000",
+    "state": "NANTERRE"
+  },
+  {
+    "address": "35 bd Anatole France",
+    "zip_code": "92190",
+    "state": "Meudon"
+  },
+  {
+    "address": "35 rue des Montiboeufs",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "36 rue Louise Michel",
+    "zip_code": "92300",
+    "state": "Levallois-Perret"
+  },
+  {
+    "address": "36",
+    "zip_code": " Rue René Boulanger",
+    "state": "75010"
+  },
+  {
+    "address": "37 rue du Capitaine Dreyfus",
+    "zip_code": "93100",
+    "state": "Montreuil"
+  },
+  {
+    "address": "39 rue des Abbesses",
+    "zip_code": "75018",
+    "state": "Paris"
+  },
+  {
+    "address": "3bis rue de Versailles",
+    "zip_code": "91300",
+    "state": "MASSY"
+  },
+  {
+    "address": "4 allée de Cocagne",
+    "zip_code": "94700",
+    "state": "Maison Alfort"
+  },
+  {
+    "address": "4 avenue Rhin et Danube",
+    "zip_code": "92250",
+    "state": "LA GARENNE COLOMBES"
+  },
+  {
+    "address": "4 rue des noisetiers",
+    "zip_code": "95280",
+    "state": "Jouy le Moutier"
+  },
+  {
+    "address": "4 rue Pierre Barberet",
+    "zip_code": "94170",
+    "state": "Le Perreux sur Marne"
+  },
+  {
+    "address": "4 rue Waldeck Rochet",
+    "zip_code": "93300",
+    "state": "Aubervilliers"
+  },
+  {
+    "address": "40 bis rue Chaudet",
+    "zip_code": "91180",
+    "state": "St Germain-les-Arpajon"
+  },
+  {
+    "address": "41 rue Brunetière",
+    "zip_code": "93600",
+    "state": "Aulnay sous Bois"
+  },
+  {
+    "address": "41 rue Camille Desmoulins",
+    "zip_code": "94230",
+    "state": "CACHAN"
+  },
+  {
+    "address": "41 rue de Lappe",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "417 rue  du bas Breteuil",
+    "zip_code": "78670",
+    "state": "Villennes sur Seine"
+  },
+  {
+    "address": "42 chemin Madame",
+    "zip_code": "95320",
+    "state": "Saint Leu la Forêt"
+  },
+  {
+    "address": "42 rue de Strasbourg",
+    "zip_code": "94300",
+    "state": "Vincennes"
+  },
+  {
+    "address": "43 bd Karl Marx",
+    "zip_code": "95100",
+    "state": "Argenteuil"
+  },
+  {
+    "address": "43 rue de la Défense",
+    "zip_code": "92130",
+    "state": "Issy-les-Moulineaux"
+  },
+  {
+    "address": "43 rue Roque de Fillol",
+    "zip_code": "92800",
+    "state": "Puteaux"
+  },
+  {
+    "address": "44 rue des vinaigirers",
+    "zip_code": "75010",
+    "state": "PARIS"
+  },
+  {
+    "address": "44 rue Durantin",
+    "zip_code": "75018",
+    "state": "Paris"
+  },
+  {
+    "address": "45 rue Rébeval",
+    "zip_code": "75019",
+    "state": "PARIS"
+  },
+  {
+    "address": "46 avenue des Ternes",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "46 rue Marjolin",
+    "zip_code": "92300",
+    "state": "Levallois Perret"
+  },
+  {
+    "address": "47 bis",
+    "zip_code": " Rue du bois d'Annappes",
+    "state": "59800"
+  },
+  {
+    "address": "48 avenue Gaston Monmousseau",
+    "zip_code": "93240",
+    "state": "Stains"
+  },
+  {
+    "address": "48 rue Dutot",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "48 rue Louise Michelle",
+    "zip_code": "92300",
+    "state": "Levallois-Perret"
+  },
+  {
+    "address": "48 rue Saint Fargeau",
+    "zip_code": "75020",
+    "state": "PARIS"
+  },
+  {
+    "address": "49 rue Camelinat",
+    "zip_code": "93270",
+    "state": "SEVRAN"
+  },
+  {
+    "address": "5 allée Maurice Chevalier",
+    "zip_code": "93100",
+    "state": "Montreuil"
+  },
+  {
+    "address": "5 place de Verdun",
+    "zip_code": "77440",
+    "state": "Isles les Meldeuses"
+  },
+  {
+    "address": "5 place du Gouvernement",
+    "zip_code": "69005",
+    "state": "Lyon"
+  },
+  {
+    "address": "5 rue Auguste Chabrières",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "5 rue de Stockholm",
+    "zip_code": "75008",
+    "state": "Paris"
+  },
+  {
+    "address": "5 villa Etienne Marey",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "50 rue Sauffroy",
+    "zip_code": "75017",
+    "state": "Paris"
+  },
+  {
+    "address": "52 bis avenue Jean Jaurès",
+    "zip_code": "92290",
+    "state": "Chatenay Malabry"
+  },
+  {
+    "address": "52 quai de Jemmapes",
+    "zip_code": "75010",
+    "state": "Paris"
+  },
+  {
+    "address": "53 avenue des Gobelins",
+    "zip_code": "75013",
+    "state": "PARIS"
+  },
+  {
+    "address": "53 jardins Boieldieu",
+    "zip_code": "92800",
+    "state": "PUTEAUX"
+  },
+  {
+    "address": "54 rue Notre-Dame de Nazareth",
+    "zip_code": "75003",
+    "state": "PARIS"
+  },
+  {
+    "address": "55 D Louis Poterat",
+    "zip_code": "76100",
+    "state": "ROUEN"
+  },
+  {
+    "address": "56 avenue Simon Bolivar",
+    "zip_code": "75019",
+    "state": "Paris"
+  },
+  {
+    "address": "56 rue de Longchamp",
+    "zip_code": "75016",
+    "state": "PARIS"
+  },
+  {
+    "address": "57 avenue Jean Jaurès",
+    "zip_code": "78500",
+    "state": "Sartrouville"
+  },
+  {
+    "address": "57 boulevard Jean  Jaurès",
+    "zip_code": "92100",
+    "state": "Boulogne Billancourt"
+  },
+  {
+    "address": "57 rue Lacordaire",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "58 rue Arago",
+    "zip_code": "93400",
+    "state": "Saint-ouen"
+  },
+  {
+    "address": "58 rue d'Estienne d'Orves",
+    "zip_code": "92500",
+    "state": "Rueil-Malmaison"
+  },
+  {
+    "address": "58 rue rodier",
+    "zip_code": "75009",
+    "state": "PARIS"
+  },
+  {
+    "address": "5ter rue du Port aux lions",
+    "zip_code": "94220",
+    "state": "Charenton le Pont"
+  },
+  {
+    "address": "6 allée Ptolémaïs",
+    "zip_code": "78240",
+    "state": "Chambourcy"
+  },
+  {
+    "address": "6 B rue des Blatriers",
+    "zip_code": "60510",
+    "state": "La Rue Saint Pierre"
+  },
+  {
+    "address": "6 impasse Bosquillon",
+    "zip_code": "91480",
+    "state": "Varennes Jarcy"
+  },
+  {
+    "address": "6 rue Charles Bertheau",
+    "zip_code": "75013",
+    "state": "PARIS"
+  },
+  {
+    "address": "6 rue Gustave Rouanet",
+    "zip_code": "75018",
+    "state": "PARIS"
+  },
+  {
+    "address": "60 avenue Victor Hugo",
+    "zip_code": "92500",
+    "state": "RUEIL-MALMAISON"
+  },
+  {
+    "address": "60 rue Chevalier",
+    "zip_code": "94210",
+    "state": "Saint Maur des Fossés"
+  },
+  {
+    "address": "61 rue de Bagnolet",
+    "zip_code": "75020",
+    "state": "Paris"
+  },
+  {
+    "address": "63 rue des Côtes",
+    "zip_code": "78600",
+    "state": "Maisons Laffite"
+  },
+  {
+    "address": "63 rue Erlangers",
+    "zip_code": "75016",
+    "state": "PARIS"
+  },
+  {
+    "address": "69 RUE DE LA CONVENTION",
+    "zip_code": "94700",
+    "state": "MAISON ALFORT"
+  },
+  {
+    "address": "7 avenue Roger Chambonnet",
+    "zip_code": "91220",
+    "state": "Bretigny sur Orge"
+  },
+  {
+    "address": "7 bd des Filles du Calvaire",
+    "zip_code": "75003",
+    "state": "Paris"
+  },
+  {
+    "address": "7 bd des Jeux Olympiques",
+    "zip_code": "78000",
+    "state": "Versailles"
+  },
+  {
+    "address": "7 bis rue Rémy Dumoncel",
+    "zip_code": "77210",
+    "state": "Avon"
+  },
+  {
+    "address": "7 boulevard de Port Royal",
+    "zip_code": "75013",
+    "state": "Paris"
+  },
+  {
+    "address": "7 rue Aristide Maillol",
+    "zip_code": "77600",
+    "state": "Bussy-Saint-Georges"
+  },
+  {
+    "address": "7 rue de Dantzig",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "7 rue de Frépillon",
+    "zip_code": "95540",
+    "state": "Méry sur Oise"
+  },
+  {
+    "address": "7 rue de Jersey",
+    "zip_code": "14000",
+    "state": "Caen"
+  },
+  {
+    "address": "7 rue du Pont aux Choux",
+    "zip_code": "75003",
+    "state": "Paris"
+  },
+  {
+    "address": "7 rue Edouard Vaillant",
+    "zip_code": "92300",
+    "state": "Levallois Perret"
+  },
+  {
+    "address": "7 rue Ferdinand Fabre",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "7 rue Humblot",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "7 rue Mademoiselle",
+    "zip_code": "92130",
+    "state": "Issy-les-Moulineaux"
+  },
+  {
+    "address": "7 rue Pasteur",
+    "zip_code": "91120",
+    "state": "PALAISEAU"
+  },
+  {
+    "address": "7 rue Saint-Bernard",
+    "zip_code": "75011",
+    "state": "PARIS"
+  },
+  {
+    "address": "70 boulevard Diderot",
+    "zip_code": "75012",
+    "state": "Paris"
+  },
+  {
+    "address": "70-72 avenue Jean Jaurès",
+    "zip_code": "92170",
+    "state": "Vanves"
+  },
+  {
+    "address": "70-74 rue de Clignancourt",
+    "zip_code": "75018",
+    "state": "Paris"
+  },
+  {
+    "address": "72 quai Louis Bleriot",
+    "zip_code": "75016",
+    "state": "PARIS"
+  },
+  {
+    "address": "72 route de la Reine",
+    "zip_code": "92100",
+    "state": "Boulogne-Billancourt"
+  },
+  {
+    "address": "73 avenue Marceau",
+    "zip_code": "92400",
+    "state": "COURBEVOIE"
+  },
+  {
+    "address": "73 rue des Morillons",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "74 rue du Commerce",
+    "zip_code": "75015",
+    "state": "PARIS"
+  },
+  {
+    "address": "8 bd de la République",
+    "zip_code": "92260",
+    "state": "Fontenay aux roses"
+  },
+  {
+    "address": "8 bis rue Jonquoy",
+    "zip_code": "75014",
+    "state": "PARIS"
+  },
+  {
+    "address": "8 bis rue Vassou",
+    "zip_code": "93230",
+    "state": "Romainville"
+  },
+  {
+    "address": "8 boulevard Voltaire",
+    "zip_code": "75011",
+    "state": "Paris"
+  },
+  {
+    "address": "8 rue Chance Milly",
+    "zip_code": "92110",
+    "state": "Clichy"
+  },
+  {
+    "address": "8 rue des Vallées",
+    "zip_code": "92290",
+    "state": "Chatenay Malabry"
+  },
+  {
+    "address": "8 rue du Docteur Goujon",
+    "zip_code": "75012",
+    "state": "PARIS"
+  },
+  {
+    "address": "8 rue Gerhard",
+    "zip_code": "92800",
+    "state": "PUTEAUX"
+  },
+  {
+    "address": "8 rue Lagille",
+    "zip_code": "75018",
+    "state": "PARIS"
+  },
+  {
+    "address": "80 rue Victor Hugo",
+    "zip_code": "38490",
+    "state": "Les Abrets"
+  },
+  {
+    "address": "83 avenue du Maréchal Foch",
+    "zip_code": "78100",
+    "state": "SAINT GERMAIN EN LAYE"
+  },
+  {
+    "address": "83 rue Gue Rond",
+    "zip_code": "77520",
+    "state": "Montigny-Lencoup"
+  },
+  {
+    "address": "86 rue du Petit Château",
+    "zip_code": "94220",
+    "state": "Charenton le Pont"
+  },
+  {
+    "address": "87 rue Gilbert Rousset",
+    "zip_code": "92600",
+    "state": "Asnières sur Seine"
+  },
+  {
+    "address": "87 rue Saint André",
+    "zip_code": "59800",
+    "state": "LILLE"
+  },
+  {
+    "address": "88 rue Duhesme",
+    "zip_code": "75018",
+    "state": "Paris"
+  },
+  {
+    "address": "89 boulevard Murat",
+    "zip_code": "75016",
+    "state": "Paris"
+  },
+  {
+    "address": "9 rue Claude Pouillet",
+    "zip_code": "75017",
+    "state": "PARIS"
+  },
+  {
+    "address": "9 rue de Lagny",
+    "zip_code": "75020",
+    "state": "PARIS"
+  },
+  {
+    "address": "9 rue des Pensées",
+    "zip_code": "45000",
+    "state": "Orléans"
+  },
+  {
+    "address": "9 rue Louis Gaillet",
+    "zip_code": "94250",
+    "state": "Gentilly"
+  },
+  {
+    "address": "91 rue Manin",
+    "zip_code": "75019",
+    "state": "PARIS"
+  },
+  {
+    "address": "91/93 rue de la République",
+    "zip_code": "92150",
+    "state": "SURESNES"
+  },
+  {
+    "address": "96 rue de Maubeuge",
+    "zip_code": "75010",
+    "state": "PARIS"
+  },
+  {
+    "address": "97 rue Monge",
+    "zip_code": "75005",
+    "state": "PARIS"
+  },
+  {
+    "address": "99 avenue Achille Peretti",
+    "zip_code": "92200",
+    "state": "Neuilly sur Seine"
+  },
+  {
+    "address": "99 rue Javel",
+    "zip_code": "75015",
+    "state": "Paris"
+  },
+  {
+    "address": "La Fontaine de l'Arche Bat. A",
+    "zip_code": "92400",
+    "state": "COURBEVOIE"
+  },
+  {
+    "address": "Route du Coteau Rouge",
+    "zip_code": "13590",
+    "state": "Meyreuil"
+  }
+]

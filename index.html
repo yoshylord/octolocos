@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OCTOLOCOS DATAVIZ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.octo.com/favicon.ico?ver=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div class="overlay"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 banner">
+            <img src="img/banner_octolocos2.png">
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-5">
+            <h1 class="cover-heading"><span>Répartition des</span> OCTOs <span>à Paris</span></h1>
+        </div>
+        <div class="col-md-7">
+            <h1 class="cover-heading"><span>Répartition des</span> OCTOs <span>en France</span></h1>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-3">
+            <div id="bloc-doughnut">
+                <canvas id="doughnut" width="200" height="200"></canvas>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div id="bloc-doughnut-legend">
+
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div id="bloc-bar" class="bloc">
+                <div class="stats-container">
+                    <canvas id="chart-bar" width="620" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="cover-heading"><span>Répartition des</span> OCTOs <span> et des</span> clients <span> en IDF</span></h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="bloc-map" class="bloc">
+                <form class="form-horizontal">
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="cb-heatmap" value="heatmap" checked="checked"> Heatmap</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="cb-clients"> Display clients</label>
+                    </div>
+                </form>
+                <div id="map-canvas"></div>
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="cover-heading">Le brief<span>...</span> </h1>
+            <div class="bloc">
+                <p>
+                    Les locaux d'OCTO sont classe, originaux et dédiés à OCTO. Ils sont parisiens, ont une histoire et sont proches d'un hub de transport. Bien que situés dans un quartier animé, ils sont calmes, lumineux et disposent d'un espace extérieur, cour, terrasses ou toits.
+                </p>
+                <p>
+                    Leur modularité permettra de s'adapter à l'aménagement futur qui prévoit : un espace café/restaurant/cuisine, ouvert ou non sur la rue, un auditorium, un espace d'accueil type Lab pour collaborateurs, clients ou startups,  et un accueil déclenchant un “A ouais, quand même !”.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="cover-heading">Le processus<span>...</span> </h1>
+            <div class="bloc">
+                <img id="process" src="img/bg_octoloco.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="./js/lib/jquery-1.10.2.min.js"></script>
+<script src="./js/lib/bootstrap.min.js"></script>
+<script src="./js/lib/Chart.min.js"></script>
+<script src="./js/dataviz-doughnut.js"></script>
+<script src="./js/dataviz-bar.js"></script>
+<script src="./js/dataviz-maps.js"></script>
+<script src="./data/clients.js"></script>
+<script src="./js/lib/moment.min.js"></script>
+<!--script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&key=AIzaSyAEzwmoAUX0VPG50B1hU-ap7TLbrt7dWhQ&sensor=true"></script-->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=visualization,places&sensor=false&key=AIzaSyAEzwmoAUX0VPG50B1hU-ap7TLbrt7dWhQ"></script>
+<script type="text/javascript">
+
+    $.ajaxSetup({
+        // Disable caching of AJAX responses
+        cache: false
+    });
+
+    $.support.cors = true;
+    $.ajaxPrefilter("json script", function (options) {
+        options.crossDomain = true;
+    });
+
+    $(document).ready(function () {
+        console.log('READY...');
+        var OCTO = OCTO || {};
+
+        OCTO.app = {
+            nbRequestsCompleted: 0,
+            nbOctoz: 0,
+            octoz: [],
+            doughnutData: [],
+            maps_key: 'AIzaSyAEzwmoAUX0VPG50B1hU-ap7TLbrt7dWhQ',
+            colorStroke: ["255, 127, 14", "31, 119, 180", "174, 199, 232", "44, 160, 44", "152, 223, 138", "214, 39, 40", "255, 152, 150", "148, 103, 189", "197, 176, 213", "140, 86, 75", "196, 156, 148", "227, 119, 194", "247, 182, 210", "127, 127, 127", "199, 199, 199", "188, 189, 34", "219, 219, 141", "23, 190, 207", "158, 218, 229"],
+            sleep: function (ms) {
+                var unixtime_ms = new Date().getTime();
+                while (new Date().getTime() < unixtime_ms + ms) {
+                }
+            },
+            retrieveGeoloc: function () {
+                var self = this;
+                console.log('loadAddresses...');
+                $.getJSON("./data/octoz.json", function (addresses) {
+                    self.nbOctoz = addresses.length;
+                    //self.nbOctoz = 3;
+                    for (var i = 0; i < self.nbOctoz; i++) {
+                        self.sleep(500);
+                        var address = addresses[i];
+                        var textAddress = address.address + ' ' + address.zip_code + ' ' + address.state;
+                        var url = 'https://maps.googleapis.com/maps/api/geocode/json?key=' + self.maps_key + '&address=' + textAddress;
+                        console.log('url:', url);
+                        $.ajax({
+                            url: url,
+                            dataType: 'json',
+                            type: 'GET',
+                            beforeSend: function (jqxhr, settings) {
+                                jqxhr.url = settings.url;
+                                jqxhr.address = address.address;
+                                jqxhr.zip_code = address.zip_code;
+                                jqxhr.address_state = address.state;
+                            },
+                            success: function (data, status, jqxhr) {
+                                console.log('data:', data);
+                                var lat = data.results[0].geometry.location.lat;
+                                var lng = data.results[0].geometry.location.lng;
+                                self.octoz.push(
+                                        {
+                                            address: jqxhr.address,
+                                            zip_code: jqxhr.zip_code,
+                                            state: jqxhr.address_state,
+                                            lat: lat,
+                                            lng: lng
+                                        }
+                                );
+
+                                console.log("=========> SUCCESS:");
+                                console.log('self.octoz:', JSON.stringify(self.octoz));
+
+                            },
+                            error: function (jqxhr, textStatus, errorThrown) {
+                                console.log("=========> FAIL:");
+                                console.log('self.octoz:', JSON.stringify(self.octoz));
+                                console.log(jqxhr);
+                                console.log(textStatus);
+                                console.log(errorThrown);
+                            },
+                            complete: function () {
+                                self.nbRequestsCompleted++;
+                                console.log('completed:' + self.nbRequestsCompleted + ' on ' + self.nbOctoz);
+                                console.log("=========> COMPLETE:");
+                                console.log('self.octoz:', JSON.stringify(self.octoz));
+                                if (self.nbRequestsCompleted == self.nbOctoz) {
+                                    console.log("=========> Promise COMPLETE:");
+                                    console.log('promise self.octoz:', JSON.stringify(self.octoz));
+                                    self.displayMap(self.octoz);
+                                }
+                            }
+                        });
+                    }
+
+                });
+            },
+            loadAndDisplayDataviz: function() {
+                var self = this;
+                console.log('loadAddresses...');
+                $.getJSON("./data/coordz.json", function (coordz) {
+                    self.octoz = coordz;
+                    console.log('self.octoz:', self.octoz);
+                    self.computeBC();
+                    self.buildZipCodeData(self.octoz);
+                    self.displayBar();
+                    self.displayDoughnut();
+                    self.displayMap(self.octoz);
+                });
+            },
+            displayMap: function () {
+                displayMap(this.octoz, clients_coordinates);
+                $("#bloc-map").fadeIn(400);
+
+            },
+            computeBC: function() {
+                var bcLat = 0;
+                var bcLng = 0;
+                this.octoz.forEach(function (octo) {
+                    bcLat += octo.lat;
+                    bcLng += octo.lng;
+                });
+                bcLat = bcLat / this.octoz.length;
+                bcLng = bcLng / this.octoz.length;
+                this.octoz.push(
+                        {
+                            lat: bcLat,
+                            lng: bcLng
+                        }
+                );
+                console.log('Barycenter:' + bcLat + ' - ' + bcLng);
+            },
+            bindControles: function () {
+                var self = this;
+
+
+
+                $("#reset").click(function () {
+                    $("#content").html("");
+                    $('input:checkbox').attr('checked', true);
+                    $("#container").css("display", "none");
+                    app.proceed = false;
+                    $("#percent").html('0%');
+                    $("#bar").attr("style", 'width: 0%');
+
+                    $("#bloc-stats-oneshot .stats-container").html("");
+                    $("#bloc-map").css("display", "none");
+                    $("#bloc-stats-oneshot").css("display", "none");
+                    $("#bloc-stats-history").css("display", "none");
+                    $("#doughnut").css("display", "none");
+                    $(".locale").html("");
+                    $("#bloc-doughnut-legend").html("");
+                    $("#bloc-doughnut-legend").css("display", "none");
+
+                    $(".overlay").fadeOut(400);
+                });
+
+                $("#start").click(function () {
+                    if ($("#start").is(':enabled')) {
+                        $("#start").prop('disabled', true);
+                        app.proceed = true;
+                        var array = new Array();
+
+                        self.nbResortsErrors = 0;
+                        $("#content").html("");
+                        $("#bloc-stats-oneshot .stats-container").html("");
+                        $("#bloc-stats-oneshot").css("display", "none");
+
+                        self.env = $("#env").val();
+                        self.locale = $("#locale").val();
+                        $(".locale").html(self.locale);
+
+                        $("#container").fadeIn(400);
+                        self.launchReport(self.env, self.locale, array);
+                        $(".overlay").fadeIn(400);
+                    }
+                });
+
+
+
+                var inView = false;
+                var inView2 = false;
+                var isScrolledIntoView = function (elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
+
+                    var elemTop = $(elem).offset().top;
+                    var elemBottom = elemTop + $(elem).height();
+
+                    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+                };
+
+                $(window).scroll(function () {
+                    if (isScrolledIntoView('#chart-bar')) {
+                        if (inView) {
+                            return;
+                        }
+                        inView = true;
+                        $("#bloc-bar").fadeIn(400);
+                        displayBarChart(self.dataBar);
+                    } else {
+                        inView = false;
+                    }
+                });
+                $(window).scroll(function () {
+                    if (isScrolledIntoView('#doughnut')) {
+                        if (inView2) {
+                            return;
+                        }
+                        inView2 = true;
+                        $("#bloc-doughnut").fadeIn(400);
+                        displayDoughnutChart(self.doughnutData)
+                    } else {
+                        inView2 = false;
+                    }
+
+                });
+
+            },
+            tmp: function() {
+                $.getJSON("./data/tmp.json", function (data) {
+                    var output = [];
+                   data.forEach(function(address) {
+                       var splitedAddress = address.split(',');
+                       var ad = {
+                           "address": splitedAddress[0],
+                           "zip_code": splitedAddress[1],
+                           "state": splitedAddress[2],
+                       }
+                       output.push(ad);
+                   });
+                    console.log('formated json:', JSON.stringify(output));
+                });
+            },
+            buildZipCodeData: function(octoz) {
+                var self = this;
+                var zipCodesJson = {};
+                octoz.forEach(function (octo, i) {
+                    if(zipCodesJson.hasOwnProperty(octo.zip_code)) {
+                        zipCodesJson[octo.zip_code] += 1;
+                    } else {
+                        zipCodesJson[octo.zip_code] = 1;
+                    }
+                });
+
+                console.log('zipCodesJson:' + JSON.stringify(zipCodesJson));
+
+                var zipCodesArray = [];
+                Object.keys(zipCodesJson).forEach(function (zip_code) {
+                    if(zipCodesJson[zip_code]>2) {
+                        zipCodesArray.push(
+                                {
+                                    zip_code: zip_code,
+                                    octos: zipCodesJson[zip_code]
+                                }
+                        );
+                    }
+                });
+
+                var sortedArray = zipCodesArray.sort(function (a, b) {
+                    if (a.octos < b.octos) {
+                        return 1;
+                    }
+                    if (a.octos > b.octos) {
+                        return -1;
+                    }
+                    return 0;
+                });
+
+                self.zipCodeArray = sortedArray;
+                self.parisZipCodeArray = [];
+                self.zipCodeArray.forEach(function (zip_code) {
+                    if(zip_code.zip_code.startsWith('75')) {
+                        self.parisZipCodeArray.push(zip_code);
+                    }
+                });
+
+
+            },
+            displayDoughnut: function() {
+                var self = this;
+                this.parisZipCodeArray.forEach(function (zip_code, i) {
+                    if(zip_code.zip_code.startsWith('75')) {
+                        self.doughnutData[i] = {
+                            value: zip_code.octos,
+                            color: "rgba(" + self.colorStroke[i] + ",0.4)",
+                            highlight: "rgba(" + self.colorStroke[i] + ",0.7)",
+                            label: zip_code.zip_code
+                        };
+                    }
+                });
+
+                var legend = displayDoughnutChart(self.doughnutData);
+                $("#bloc-doughnut-legend").html(legend);
+                $("#doughnut").fadeIn(400);
+                $("#bloc-doughnut-legend").fadeIn(400);
+            },
+            displayBar: function() {
+                var self = this;
+                var labels = [];
+                var data = [];
+                this.zipCodeArray.forEach(function (zip_code, i) {
+                    labels.push(zip_code.zip_code);
+                    data.push(zip_code.octos);
+                });
+                var datasets = [];
+                datasets[0] = {
+                    label: "Répartition par codes postaux",
+                    //fillColor: "rgba(31, 119, 180,0.4)",
+                    fillColor: "rgba(14, 35, 86,0.9)",
+                    strokeColor: "rgba(220,220,220,0.8)",
+                    highlightFill: "rgba(0,175,203,0.8)",
+                    highlightStroke: "rgba(220,220,220,1)",
+                    data: data
+                };
+                var data = {
+                    labels: labels,
+                    datasets: datasets,
+                };
+                self.dataBar = data;
+                displayBarChart(self.dataBar);
+                $("#chart-bar").fadeIn(400);
+            },
+            start: function () {
+                this.bindControles();
+                //this.retrieveGeoloc();
+                this.loadAndDisplayDataviz();
+                $(".menu").fadeIn(1000);
+            }
+        }
+
+
+        var app = OCTO.app || new OCTO.app();
+        app.start();
+    })
+    ;
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+#section-menu {
+    /*display: none;*/
+}
+li {
+    list-style-type: none;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 70px;
+}
+img {
+    width: 800px;
+}
+
+#process {
+    width: 1116px;
+}
+
+* {
+    font-family: "Anonymous Pro", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+    font-size: 12px;
+}
+
+.error {
+    color: darkred;
+}
+
+h1 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+}
+
+.percent, .percent span {
+    font-size: 20px;
+    color: darkred;
+}
+
+.percent span {
+    font-size: 28px;
+}
+
+
+*, body, h1, .error, .percent, .percent span {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 14px;
+
+    /*color: #dbedf1;*/
+    font-family: inherit;
+}
+
+.error {
+    background-color: rgba(255, 188, 50, 0.2);
+    color: orange;
+}
+
+.percent {
+    font-size: 18px;
+    /*margin-bottom: 10px;*/
+
+    color: orange;
+    text-align: right;
+}
+
+.percent span {
+    font-size: 24px;
+    color: orange;
+}
+
+.bloc h2 {
+    text-align: right;
+    margin: 0;
+    vertical-align: top;
+}
+
+.bloc h2 span {
+    font-size: 16px;
+    color: #0e2356;
+}
+
+.bloc {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border: 2px solid rgba(235, 232, 225, 0.4);
+}
+.bloc, h1, h2, .bloc label {
+    color: #0e2356;
+}
+
+body {
+    background-image: url('../img/bg_cloud.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.menu {
+    display: none;
+}
+
+#container {
+    /* background-color: rgba(77, 149, 163, 0.5);*/
+    display: none;
+}
+
+#container h1.error {
+    color: rgb(255, 122, 0);
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control, option .checkbox label, .radio label {
+    color: #555;
+}
+
+.btn-success {
+    border-color: #154752;
+    background-image: linear-gradient(to bottom, #528b92 0, #2a5b6a 100%);
+}
+
+.btn-success:focus, .btn-success:hover {
+    background-color: #2a5b6a;
+    border-color: #154752;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons/icons-8b7ac638bed91d57b99067e69278e409.woff") format("woff"),
+    url("../fonts/icons/icons-8b7ac638bed91d57b99067e69278e409.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Icons CM";
+    src: url("../fonts/icons/Icons-CM-d56658fc1d8c2bf157e687fa7e4c0729.woff") format("woff"),
+    url("../fonts/icons/Icons-CM-d56658fc1d8c2bf157e687fa7e4c0729.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Icon {
+    color: inherit;
+    font-family: "icons";
+    display: block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    float: left;
+    margin-right: 4px;
+}
+
+
+.cm-Icon--trident:before {
+    content: "\e032";
+    font-size: 300px;
+    position: fixed;
+    top: 250px;
+    right: 90px;
+    color: #e0e0e0;
+    opacity: 0.2;
+}
+
+.bloc .cm-Icon--trident:before {
+    content: "\e032";
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    color: inherit;
+    opacity: 0.5;
+    display: block;
+}
+
+.progress {
+    opacity: 0.8;
+}
+
+
+
+
+#bloc-doughnut canvas {
+    margin: 0;
+}
+
+/*** d3 ***/
+svg {
+    font-family: "Helvetica Neue", Helvetica;
+    opacity: 0.7;
+}
+
+.line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+
+#bloc-map {
+    display: none;
+    opacity: 0.8;
+}
+
+#bloc-stats-oneshot {
+    display: none;
+}
+
+#bloc-stats-history {
+    display: none;
+}
+
+/*** dataviz-oneshot ***/
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font: 14px sans-serif;
+    fill: #dbedf1;
+}
+
+/*** /dataviz-oneshot ***/
+
+/*** dataviz-doughnut ***/
+.doughnut-legend {
+    margin: 0;
+    padding: 0;
+}
+.doughnut-legend li span {
+    display: block;
+    position: static;
+    /* left: 0; */
+    /* top: 0; */
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+}
+ul.doughnut-legend li {
+    height: 24px;
+}
+/*** /dataviz-doughnut ***/
+
+/* overlay */
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(19, 38, 45, 0.8);
+    display: none;
+}
+
+/* Google maps */
+#map-canvas {
+    height: 650px;
+    width: 1115px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cover-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    color: #0e2356;
+}
+.cover-heading span {
+    font-size: 26px;
+    color: #0e2356;
+}
+
+.cm-Icon {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Icons CM";
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+}
+.cm-Icon--clubmed {
+    display: block;
+    height: 0;
+    font-size: 2.8em;
+    float: right;
+    margin-top: 10px;
+}
+.cm-Icon--clubmed:before {
+    content: "\f114";
+}
+
+/****** tmp google maps ******/
+.controls {
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+    color: #000;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+/*****************************/
