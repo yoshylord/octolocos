@@ -1,3 +1,39 @@
+.modal-content {
+    background-image: url('../img/Avatar_capitaine_rvb.png') !important;
+    background-size: 550px;
+    background-position: 20px 159px;
+    background-repeat: no-repeat;
+}
+.modal-body {
+    height: 570px;
+}
+
+.legend {
+    float: right;
+    margin-top: -62px;
+}
+.legend .octo {
+    background-image: url('../img/octomarker.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 21px;
+}
+.legend .barycenter {
+    background-image: url('../img/gold_octomarker.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 21px;
+    color: #f1c100;
+}
+.legend .clients {
+    background-image: url('../img/red_bullet.png');
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    padding-left: 21px;
+    color: #ea2e39;
+    background-position: 3px 4px;
+}
+
 #section-menu {
     /*display: none;*/
 }
@@ -9,7 +45,7 @@ li {
     text-align: center;
     margin-bottom: 70px;
 }
-img {
+.banner img {
     width: 800px;
 }
 
@@ -96,9 +132,10 @@ h1 {
 
 body {
     background-image: url('../img/bg_cloud.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 
 h1 {
@@ -193,10 +230,22 @@ h1 {
 }
 
 
-
+#bloc-container-doughnut {
+    overflow: auto;
+}
+#bloc-doughnut {
+    float: left;
+    width: 230px;
+    margin-top: 30px;
+}
 
 #bloc-doughnut canvas {
     margin: 0;
+}
+
+#bloc-doughnut-legend {
+    float: left;
+    margin-top: 30px;
 }
 
 /*** d3 ***/
@@ -225,20 +274,7 @@ svg {
     display: none;
 }
 
-/*** dataviz-oneshot ***/
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
 
-.axis text {
-    font: 14px sans-serif;
-    fill: #dbedf1;
-}
-
-/*** /dataviz-oneshot ***/
 
 /*** dataviz-doughnut ***/
 .doughnut-legend {
@@ -304,26 +340,6 @@ body {
     color: #0e2356;
 }
 
-.cm-Icon {
-    color: rgba(255, 255, 255, 1);
-    font-family: "Icons CM";
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
-    font-weight: normal;
-    font-style: normal;
-}
-.cm-Icon--clubmed {
-    display: block;
-    height: 0;
-    font-size: 2.8em;
-    float: right;
-    margin-top: 10px;
-}
-.cm-Icon--clubmed:before {
-    content: "\f114";
-}
-
 /****** tmp google maps ******/
 .controls {
     margin-top: 16px;
@@ -368,3 +384,42 @@ body {
     font-weight: 300;
 }
 /*****************************/
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+    .banner img {
+        width: 100%;
+    }
+
+    #chart-bar {
+        width: 695px;
+    }
+
+    #map-canvas {
+        width: 695px;
+    }
+
+    #process {
+        width: 695px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .banner img {
+        width: 100%;
+    }
+
+    #chart-bar {
+        width: 345px;
+    }
+
+    #map-canvas {
+        width: 345px;
+    }
+    #process {
+        width: 345px;
+    }
+}

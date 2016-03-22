@@ -25,26 +25,16 @@
     <div class="row">
         <div class="col-md-5">
             <h1 class="cover-heading"><span>Répartition des</span> OCTOs <span>à Paris</span></h1>
+            <div id="bloc-container-doughnut">
+                <div id="bloc-doughnut">
+                    <canvas id="doughnut" width="200" height="200"></canvas>
+                </div>
+                <div id="bloc-doughnut-legend">
+                </div>
+            </div>
         </div>
         <div class="col-md-7">
             <h1 class="cover-heading"><span>Répartition des</span> OCTOs <span>en France</span></h1>
-        </div>
-    </div>
-
-    <br />
-
-    <div class="row">
-        <div class="col-md-3">
-            <div id="bloc-doughnut">
-                <canvas id="doughnut" width="200" height="200"></canvas>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div id="bloc-doughnut-legend">
-
-            </div>
-        </div>
-        <div class="col-md-7">
             <div id="bloc-bar" class="bloc">
                 <div class="stats-container">
                     <canvas id="chart-bar" width="620" height="400"></canvas>
@@ -72,6 +62,17 @@
                         <label><input type="checkbox" id="cb-clients"> Display clients</label>
                     </div>
                 </form>
+                <span class="legend">
+                        <div class="octo">
+                            Octoz
+                        </div>
+                        <div class="clients">
+                            Clients
+                        </div>
+                        <div class="barycenter">
+                            Octoz barycenter
+                        </div>
+                    </span>
                 <div id="map-canvas"></div>
                 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
             </div>
@@ -106,6 +107,29 @@
     </div>
 
 </div>
+
+
+<!-- .modal -->
+<div id="modal-octo" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 
 <script src="./js/lib/jquery-1.10.2.min.js"></script>
 <script src="./js/lib/bootstrap.min.js"></script>
@@ -231,16 +255,24 @@
             computeBC: function() {
                 var bcLat = 0;
                 var bcLng = 0;
+                var count = 0;
                 this.octoz.forEach(function (octo) {
-                    bcLat += octo.lat;
-                    bcLng += octo.lng;
+                    // keep only IDF
+                    if( 48.774597<octo.lat && octo.lat<49.034912 && 1.985665 < octo.lng && octo.lng < 2.727242 ) {
+                        count ++;
+                        bcLat += octo.lat;
+                        bcLng += octo.lng;
+                    }
                 });
-                bcLat = bcLat / this.octoz.length;
-                bcLng = bcLng / this.octoz.length;
+                bcLat = bcLat / count;
+                bcLng = bcLng / count;
                 this.octoz.push(
                         {
                             lat: bcLat,
-                            lng: bcLng
+                            lng: bcLng,
+                            address: '1 Port de la Concorde',
+                            zip_code: '75008',
+                            state: 'PARIS'
                         }
                 );
                 console.log('Barycenter:' + bcLat + ' - ' + bcLng);
